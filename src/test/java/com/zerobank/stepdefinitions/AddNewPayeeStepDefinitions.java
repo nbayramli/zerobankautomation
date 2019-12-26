@@ -37,8 +37,7 @@ public class AddNewPayeeStepDefinitions extends PayBillsPage {
 
     @Then("message The new Payee The Law Offices of Hyde, Price & Scharks successfully created. should be displayed")
     public void message_The_new_Payee_The_Law_Offices_of_Hyde_Price_Scharks_successfully_created_should_be_displayed() {
-        message.isDisplayed();
-        System.out.println(message.getText());
+    
         Assert.assertEquals(message.getText(),"The new payee The Law Offices of Hyde, Price & Scharks was successfully created.");
         System.out.println("The message successfully displayed");
 
