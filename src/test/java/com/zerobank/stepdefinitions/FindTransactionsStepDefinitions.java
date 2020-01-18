@@ -10,14 +10,9 @@ import io.cucumber.java.en.When;
 
 public class FindTransactionsStepDefinitions extends AccountActivityPage {
 
-    LoginPage loginPage = new LoginPage();
 
     @Given("the user accesses the Find Transactions tab")
     public void the_user_accesses_the_Find_Transactions_tab() {
-        Driver.get().get(ConfigurationReader.getProperty("url"));
-        String userName = ConfigurationReader.getProperty("user_name");
-        String password = ConfigurationReader.getProperty("password");
-        loginPage.login(userName, password);
         findTransactions.click();
         System.out.println("User in the Find Transactions page");
 
