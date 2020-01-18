@@ -11,8 +11,6 @@ import org.junit.Assert;
 
 public class AddNewPayeeStepDefinitions extends PayBillsPage {
 
-    LoginPage loginPage = new LoginPage();
-
     @Given("Add New Payee tab")
     public void add_New_Payee_tab() {
     
