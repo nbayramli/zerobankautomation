@@ -15,10 +15,7 @@ public class AddNewPayeeStepDefinitions extends PayBillsPage {
 
     @Given("Add New Payee tab")
     public void add_New_Payee_tab() {
-        Driver.get().get(ConfigurationReader.getProperty("url"));
-        String userName = ConfigurationReader.getProperty("user_name");
-        String password = ConfigurationReader.getProperty("password");
-        loginPage.login(userName, password);
+    
         payBillsTab.click();
         addNewPayee.click();
         System.out.println("User is in PayBills Page and clicked to add New Payee tab");
